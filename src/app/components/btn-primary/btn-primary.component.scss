@@ -1,3 +1,5 @@
+@import "../../../color-variables.scss";
+
 /* Definição de um botão com a classe .btn */
 .btn {
   /* Remove a borda do botão */
@@ -8,7 +10,7 @@
   /* Muda o cursor para pointer ao passar o mouse sobre o botão */
   cursor: pointer;
   /* Define o preenchimento interno (padding) do botão com 20px */
-  padding: 20px;
+  padding: 20px 40px;
 
   /* Estilização para quando o botão está desabilitado */
   &:disabled {

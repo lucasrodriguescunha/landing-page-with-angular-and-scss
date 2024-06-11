@@ -8,7 +8,7 @@ type BtnVariants = 'primary' | 'secondary';
 // Declaração do componente Angular
 @Component({
   // Seletor usado para instanciar o componente em um template
-  selector: 'app-btn-primary',
+  selector: 'btn-primary',
   // Indica que este é um componente independente
   standalone: true,
   // Especifica quais módulos externos serão importados (nenhum neste caso)
