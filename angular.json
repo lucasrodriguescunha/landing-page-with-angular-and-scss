@@ -27,6 +27,10 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               {
+                "glob": "favicon.ico",
+                "input": "src/"
+              },
+              {
                 "glob": "**/*",
                 "input": "public"
               }
@@ -103,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "605ffea2-8c9b-418f-ade2-7ba7ed4ca7c4"
   }
 }
