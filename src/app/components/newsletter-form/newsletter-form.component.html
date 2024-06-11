@@ -11,13 +11,18 @@
       praesentium sunt ea asperiores.
     </p>
   </div>
-  <form>
+  <form [formGroup]="newsletterForm">
     <label for="name">Nome</label>
-    <input id="name" />
+    <input id="name" formControlName="name" />
 
     <label for="email">E-mail</label>
-    <input id="email" />
+    <input id="email" formControlName="email" />
 
-    <btn-primary btn__text="Inscreva-se" variant="secondary"></btn-primary>
+    <btn-primary
+      btn__text="Inscreva-se"
+      variant="secondary"
+      (submit)="onSubmit()"
+      [disabled]="!newsletterForm.valid"
+    ></btn-primary>
   </form>
 </section>
