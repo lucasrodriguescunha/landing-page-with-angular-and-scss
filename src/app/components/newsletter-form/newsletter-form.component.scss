@@ -1,0 +1,46 @@
+@import "../../../color-variables.scss";
+
+.form__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 60px;
+
+  background: $secondary-color;
+  color: white;
+
+  h3 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  p {
+    width: 60ch;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  form {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1080px) {
+  .form__section {
+    flex-direction: row;
+    gap: 115px;
+    padding: 40px 120px;
+  }
+}
