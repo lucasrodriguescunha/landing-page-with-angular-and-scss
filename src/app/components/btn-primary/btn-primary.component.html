@@ -1,1 +1,20 @@
-<p>btn-primary works!</p>
+(click)="submit()"       <!-- Evento de clique: quando o botão é clicado, a função 'submit()' é chamada -->
+[class]="'btn ' + variant" <!-- Adiciona dinamicamente classes ao botão. 'btn' é uma classe fixa e 'variant' é uma variável que pode ser 'primary', 'secondary', etc. -->
+[disabled]="disabled"    <!-- Define dinamicamente o estado 'disabled' do botão baseado na variável 'disabled' -->
+
+<!-- Definição de um botão -->
+<button
+    (click)="submit()"
+    [class]="'btn ' + variant"
+    [disabled]="disabled"
+>
+    <!-- Verifica se 'loading' é falso; se for, exibe o texto do botão -->
+    <span *ngIf="!loading">
+        {{ btnText }}
+    </span>
+    <!-- Verifica se 'loading' é verdadeiro; se for, exibe o texto "Carregando..." -->
+    <span *ngIf="loading">
+        Carregando...
+    </span>
+</button>
+

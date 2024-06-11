@@ -1,0 +1,49 @@
+/* Definição de um botão com a classe .btn */
+.btn {
+  /* Remove a borda do botão */
+  border: none;
+  /* Define bordas arredondadas com raio de 30px */
+  border-radius: 30px;
+
+  /* Muda o cursor para pointer ao passar o mouse sobre o botão */
+  cursor: pointer;
+  /* Define o preenchimento interno (padding) do botão com 20px */
+  padding: 20px;
+
+  /* Estilização para quando o botão está desabilitado */
+  &:disabled {
+    /* Define a opacidade do botão desabilitado para 0.6 */
+    opacity: 0.6;
+  }
+
+  /* Estilização para botões com a classe adicional .primary */
+  &.primary {
+    /* Define a cor do texto como branco */
+    color: white;
+    /* Define um fundo com gradiente linear de cima para baixo (180 graus)
+       usando as variáveis de cor $primary-color e $secondary-color */
+    background: -webkit-linear-gradient(
+      180deg,
+      $primary-color,
+      $secondary-color
+    );
+
+    /* Define o tamanho da fonte para 24px */
+    font-size: 24px;
+    /* Define o peso da fonte como negrito */
+    font-weight: bold;
+  }
+
+  /* Estilização para botões com a classe adicional .secondary */
+  &.secondary {
+    /* Define o fundo como branco */
+    background: white;
+    /* Define a cor do texto usando a variável $primary-text */
+    color: $primary-text;
+
+    /* Define o tamanho da fonte para 16px */
+    font-size: 16px;
+    /* Define o peso da fonte como negrito */
+    font-weight: bold;
+  }
+}
