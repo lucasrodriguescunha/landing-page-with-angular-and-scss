@@ -35,7 +35,7 @@ Here you describe how to run your project locally
 Here you list all prerequisites necessary for running your project. For example:
 
 - [NodeJS](https://github.com/)
-- [Git 2](https://github.com)
+- [GitHub](https://github.com)
 
 <h3>Cloning</h3>
 
